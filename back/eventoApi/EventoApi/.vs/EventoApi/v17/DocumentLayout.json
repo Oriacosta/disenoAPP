@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\services\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:services\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\utilidad\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:utilidad\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\models\\lugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:models\\lugar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:models\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|c:\\users\\valen\\desktop\\eventoapi\\eventoapi\\services\\ieventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CACD878-7AE2-43A8-A582-F4D74F56AD15}|EventoApi.csproj|solutionrelative:services\\ieventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventoService.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Services\\EventoService.cs",
+              "RelativeDocumentMoniker": "Services\\EventoService.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Services\\EventoService.cs",
+              "RelativeToolTip": "Services\\EventoService.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T18:53:43.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "Controllers\\EventoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T18:48:44.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Utilidad\\Response.cs",
+              "RelativeDocumentMoniker": "Utilidad\\Response.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Utilidad\\Response.cs",
+              "RelativeToolTip": "Utilidad\\Response.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T21:24:41.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T18:54:22.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IEventoService.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Services\\IEventoService.cs",
+              "RelativeDocumentMoniker": "Services\\IEventoService.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Services\\IEventoService.cs",
+              "RelativeToolTip": "Services\\IEventoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T21:12:11.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Models\\Evento.cs",
+              "RelativeDocumentMoniker": "Models\\Evento.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Models\\Evento.cs",
+              "RelativeToolTip": "Models\\Evento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T18:52:43.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T18:56:45.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lugar.cs",
+              "DocumentMoniker": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Models\\Lugar.cs",
+              "RelativeDocumentMoniker": "Models\\Lugar.cs",
+              "ToolTip": "C:\\Users\\valen\\Desktop\\eventoApi\\EventoApi\\Models\\Lugar.cs",
+              "RelativeToolTip": "Models\\Lugar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T18:52:53.055Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
