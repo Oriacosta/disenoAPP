@@ -1,0 +1,88 @@
+/* Contenedor principal */
+.alta-evento-container {
+    max-width: 48rem; /* Equivalente a max-w-3xl en Tailwind */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 1.5rem; /* Equivalente a p-6 en Tailwind */
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 0.5rem; /* Equivalente a rounded-lg en Tailwind */
+  }
+  
+  /* Título */
+  .alta-evento-title {
+    font-size: 1.5rem; /* Equivalente a text-2xl en Tailwind */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Equivalente a mb-6 en Tailwind */
+    color: #1a202c; /* Equivalente a text-gray-800 en Tailwind */
+  }
+  
+  /* Formulario */
+  .alta-evento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio entre elementos */
+  }
+  
+  /* Etiquetas */
+  .alta-evento-label {
+    display: block;
+    font-weight: 500; /* Equivalente a font-medium en Tailwind */
+    margin-bottom: 0.5rem; /* Equivalente a mb-1 en Tailwind */
+    color: #4a5568; /* Equivalente a text-gray-700 en Tailwind */
+  }
+  
+  /* Inputs y textarea */
+  .alta-evento-input,
+  .alta-evento-textarea {
+    width: 100%;
+    padding: 0.5rem; /* Equivalente a p-2 en Tailwind */
+    border: 1px solid #e2e8f0; /* Equivalente a border-gray-300 en Tailwind */
+    border-radius: 0.5rem; /* Equivalente a rounded-lg en Tailwind */
+    outline: none;
+  }
+  
+  .alta-evento-input:focus,
+  .alta-evento-textarea:focus {
+    border-color: #4299e1; /* Equivalente a focus:ring-blue-400 en Tailwind */
+    box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.5); /* Equivalente a focus:ring-2 en Tailwind */
+  }
+  
+  /* Grid para los inputs de hora */
+  .alta-evento-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; /* Espacio entre columnas */
+  }
+  
+  /* Botones */
+  .alta-evento-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem; /* Espacio entre botones */
+  }
+  
+  .alta-evento-button {
+    padding: 0.5rem 1rem; /* Equivalente a px-4 py-2 en Tailwind */
+    border-radius: 0.5rem; /* Equivalente a rounded-lg en Tailwind */
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .alta-evento-button-cancel {
+    background-color: #e2e8f0; /* Equivalente a bg-gray-300 en Tailwind */
+    color: #4a5568; /* Equivalente a text-gray-700 en Tailwind */
+  }
+  
+  .alta-evento-button-cancel:hover {
+    background-color: #cbd5e0; /* Equivalente a hover:bg-gray-400 en Tailwind */
+  }
+  
+  .alta-evento-button-save {
+    background-color: #4299e1; /* Equivalente a bg-blue-500 en Tailwind */
+    color: white;
+  }
+  
+  .alta-evento-button-save:hover {
+    background-color: #3182ce; /* Equivalente a hover:bg-blue-600 en Tailwind */
+  }
