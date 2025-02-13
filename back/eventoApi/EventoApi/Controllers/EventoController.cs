@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using EventoApi.Models;
 using EventoApi.Services;
 using EventoApi.Utilidad;
@@ -19,105 +19,98 @@ namespace EventoApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
-        [Route("Listar Eventos")]
-        public async Task<IActionResult> ListaEventos()
+        // ✅ Obtener todos los eventos
+        [HttpGet("ListaEventos")]
+        public async Task<IActionResult> ObtenerEventos()
         {
-            var rsp = new Response<List<Evento>>();
             try
             {
-                rsp.status = true;
-                rsp.value = (await _eventoService.GetEventosAsync()).ToList(); // Convertir a List<Evento>
+                var eventos = await _eventoService.ObtenerEventosAsync();
+                return Ok(eventos);
             }
             catch (Exception ex)
             {
-                rsp.status = false;
-                _logger.LogError(ex, "Error al obtener los eventos.");
+                _logger.LogError(ex, "Error al obtener la lista de eventos.");
+                return StatusCode(500, "Error interno del servidor.");
             }
-            return Ok(rsp);
         }
 
-        [HttpGet]
-        [Route("Evento ID")]
-        public async Task<IActionResult> ListaEventoPorId(int id)
+        // ✅ Obtener evento por ID
+        [HttpGet("EventoPorId/{id}")]
+        public async Task<IActionResult> ObtenerEventoPorId(int id)
         {
             if (id <= 0)
-            {
-                return BadRequest("El ID proporcionado no es v�lido.");
-            }
+                return BadRequest("El ID proporcionado no es válido.");
 
-            var rsp = new Response<Evento>();
             try
             {
-                rsp.status = true;
-                rsp.value = await _eventoService.GetEventoByIdAsync(id); // Obtener evento por ID
-            }
-            catch (Exception ex)
-            {
-                rsp.status = false;
-                _logger.LogError(ex, "Error al obtener el evento por ID.");
-            }
-            return Ok(rsp);
-        }
-
-        [HttpPost]
-        [Route("Crear Evento")]
-        public async Task<IActionResult> PostEvento(Evento evento)
-        {
-            var rsp = new Response<Evento>();
-            try
-            {
-                rsp.status = true;
-                rsp.value = await _eventoService.CreateEventoAsync(evento);
-            }
-            catch (Exception ex)
-            {
-                rsp.status = false;
-                _logger.LogError(ex, "Error al crear el evento.");
-            }
-            return Ok(rsp);
-        }
-
-        [HttpPut]
-        [Route("Actualizar Evento")]
-        public async Task<IActionResult> PutEvento(int id, Evento evento)
-        {
-            var rsp = new Response<bool>();
-            try
-            {
-                rsp.status = await _eventoService.UpdateEventoAsync(id, evento);
-                if (!rsp.status)
-                {
-                    return BadRequest("No se pudo actualizar el evento.");
-                }
-            }
-            catch (Exception ex)
-            {
-                rsp.status = false;
-                _logger.LogError(ex, "Error al actualizar el evento.");
-            }
-            return Ok(rsp);
-        }
-
-        [HttpDelete]
-        [Route("Eliminar Evento")]
-        public async Task<IActionResult> DeleteEvento(int id)
-        {
-            var rsp = new Response<bool>();
-            try
-            {
-                rsp.status = await _eventoService.DeleteEventoAsync(id);
-                if (!rsp.status)
-                {
+                var evento = await _eventoService.ObtenerEventoPorIdAsync(id);
+                if (evento == null)
                     return NotFound("Evento no encontrado.");
-                }
+
+                return Ok(evento);
             }
             catch (Exception ex)
             {
-                rsp.status = false;
-                _logger.LogError(ex, "Error al eliminar el evento.");
+                _logger.LogError(ex, "Error al obtener el evento por ID.");
+                return StatusCode(500, "Error interno del servidor.");
             }
-            return Ok(rsp);
+        }
+
+        [HttpPost("CrearEvento")]
+        public async Task<IActionResult> CrearEvento([FromBody] Evento evento)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var nuevoEvento = await _eventoService.CrearEventoAsync(evento);
+                return CreatedAtAction(
+                    nameof(ObtenerEventoPorId),
+                    new { id = nuevoEvento.ID },
+                    nuevoEvento
+                );
+            }
+            catch (ArgumentException argEx)
+            {
+                _logger.LogWarning(argEx, "Error de validación al crear evento");
+                return BadRequest(argEx.Message);
+            }
+            catch (KeyNotFoundException notFoundEx)
+            {
+                _logger.LogWarning(notFoundEx, "Recurso no encontrado al crear evento");
+                return NotFound(notFoundEx.Message);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al crear el evento");
+                return StatusCode(500, "Error interno del servidor al crear el evento.");
+            }
+        }
+
+        // ✅ Editar evento
+        [HttpPut("EditarEvento/{id}")]
+        public async Task<IActionResult> ActualizarEvento(int id, [FromBody] Evento evento)
+        {
+            if (id != evento.ID)
+                return BadRequest("El ID del evento no coincide con el ID proporcionado.");
+
+            try
+            {
+                var resultado = await _eventoService.ActualizarEventoAsync(id, evento);
+                if (!resultado)
+                    return NotFound("Evento no encontrado para actualizar.");
+
+                return Ok("Evento actualizado con éxito.");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al actualizar el evento.");
+                return StatusCode(500, "Error interno del servidor.");
+            }
         }
     }
 }

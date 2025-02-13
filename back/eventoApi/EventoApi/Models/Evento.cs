@@ -1,31 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using EventoApi.Models;
+﻿using System;
+using System.Collections.Generic;
 
-namespace EventoApi.Models
+namespace EventoApi.Models;
+
+public partial class Evento
 {
-    public class Evento
-    {
-        [Key]
-        public int ID { get; set; }
+    public int ID { get; set; }
 
-        [Required, MaxLength(45)]
-        public string? Nombre { get; set; }
+    public string? Nombre { get; set; }
 
-        [Required]
-        public DateTime Fecha { get; set; }
+    public DateOnly? Fecha { get; set; }
 
-        [Required]
-        public TimeSpan HorarioInicio { get; set; }
+    public TimeOnly? HorarioInicio { get; set; }
 
-        [Required]
-        public TimeSpan HorarioFin { get; set; }
+    public TimeOnly? HorarioFin { get; set; }
 
-        [MaxLength(255)]
-        public string? Descripcion { get; set; }
+    public string? Descripcion { get; set; }
 
-        [ForeignKey("Lugar")]
-        public int LugarID { get; set; }
-        public Lugar? Lugar { get; set; }
-    }
+    public int LugarId { get; set; }
+
+    public virtual Lugar? LugarIDNavegation { get; set; }
 }

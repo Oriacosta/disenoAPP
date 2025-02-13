@@ -3,7 +3,10 @@ import BuscarEvento from "./components/BuscarEvento/BuscarEvento"
 import AltaEvento from "./components/AltaEvento/AltaEvento"
 
 function App() {
+
   return (
+
+
     <Router>
       <Routes>
         <Route path="/" element={<BuscarEvento />} />

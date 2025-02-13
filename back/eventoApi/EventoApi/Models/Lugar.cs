@@ -1,13 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
-namespace EventoApi.Models
+namespace EventoApi.Models;
+
+public partial class Lugar
 {
-    public class Lugar
-    {
-        [Key]
-        public int ID { get; set; }
+    public int ID { get; set; }
 
-        [Required, MaxLength(100)]
-        public string? Nombre { get; set; }
-    }
+    public string? Descripcion { get; set; } = null!;
+
+    public int CiudadId { get; set; }
+
+    public virtual Ciudad? CiudadIDNavegation { get; set; }
+
+    [JsonIgnore]
+    public virtual ICollection<Evento> Eventos { get; set; } = new List<Evento>();
 }

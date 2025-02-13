@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "b8QNOfDnG5pN0xkl4YeIak/0pw8E/Epplry8Nilguvc=",
+  "Hash": "iJZyRNflQvlvQ5dulwFtTisvIpLu9X63lwVXgTUaLfE=",
   "Source": "EventoApi",
   "BasePath": "_content/EventoApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
